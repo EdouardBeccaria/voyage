@@ -12,7 +12,8 @@
 </head>
 <body>
 <div class="container" style="margin-top:200px;">
-    <h1> Ajout d'un voyage</h1>
+    <div class="card">
+        <h1> Ajout d'un voyage</h1>
     @if(Session::has('errors'))
         <span style="color: red; font-weight: bold">{{ Session::get('errors') }}</span>
     @endif
@@ -46,6 +47,7 @@
             </div>
         </div>
     </form>
+    </div>
 </div>
 
 
