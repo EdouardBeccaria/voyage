@@ -67,15 +67,7 @@ class HomeController extends Controller
         if ($validator->fails()) {
             return redirect()->back()->with('errors', 'Les paramètres renseignés sont incorrects !');
         }
-
         $validator = collect($validator->validate());
-
-        /** On vérifie si une ville a été renseignée plusieurs fois dans les champs départs ET arrivées
-         * (laissez en commentaire si on ne veut juste pas la même ville dans départ ou dans arrivée)
-         */
-//        if (array_intersect($validator->get('arrival'), $validator->get('departure'))) {
-//            return redirect()->back()->with('errors', 'La même ville a été renseignée plusieurs fois!');
-//        }
 
         /** On récupère le nombre d'étapes renseignées */
         $size = count($validator->get('type'));

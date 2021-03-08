@@ -6,6 +6,7 @@ Projet Agence de voyage
 
 * Docker Desktop
 
+Le projet a été developpé sur MacOS
 
 ## Les commandes à lancer
 
@@ -39,4 +40,10 @@ Mettez à jour le style
 
 Et le tour est joué !
 
+Le projet est accessible via localhost ou http://voyage.test
 
+## Tests unitaires
+
+Pour lancer les tests unitaires, il suffit de rentrer la commande
+
+> ./vendor/bin/sail test
