@@ -4,28 +4,39 @@ Projet Agence de voyage
 
 ## Pré-requis
 
-* Docker
+* Docker Desktop
 
 
 ## Les commandes à lancer
 
-Récupération du projet :
+Récupérez le projet
 
-> git clone
+> git clone https://github.com/EdouardBeccaria/voyage.git
 
-Après avoir récupérer le projet :
+Déplacez vous dedans
 
->cd agence  
-> 
-> ./vendor/bin/sail up
+> cd voyage  
 
-Une fois sail lancer, il faut ouvrir un autre onglet du terminal de commande.
+Récupérez les variables d'environnement
 
-Pour mettre en place la base de donnée, il faut lancer la commande :
+> cp .env.example .env  
+
+Installez les packages 
+
+> composer install  
+
+Lancez Sail pour mettre en place le Docker et l'interface de commande
+
+> ./vendor/bin/sail up -d
+
+Créez la base de données
 
 >./vendor/bin/sail artisan migrate
 
-Suite à la migration, la base de données n'est pas peuplée.
+Mettez à jour le style
 
-Afin de pouvoir utiliser le docker sur le projet, un dossier laradock doit être créer.
+> npm install && npm run dev  
+
+Et le tour est joué !
+
 
