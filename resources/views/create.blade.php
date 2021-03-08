@@ -13,8 +13,8 @@
 <body>
 <div class="container" style="margin-top:200px;">
     <h1> Ajout d'un voyage</h1>
-@if(Session::has('errors'))
-        <span>{{ Session::get('errors') }}</span>
+    @if(Session::has('errors'))
+        <span style="color: red; font-weight: bold">{{ Session::get('errors') }}</span>
     @endif
     <form action="{{ route('store') }}" method="post">
         @csrf
@@ -38,7 +38,7 @@
 
                 </table>
                 <div style="padding-top: 10px">
-                <button id="addMore" type="button" class="btn">Ajouter une étape</button>
+                    <button id="addMore" type="button" class="btn">Ajouter une étape</button>
                 </div>
                 <div style="padding-top: 10px">
                     <button type="submit" class="btn">Enregistrer le voyage</button>

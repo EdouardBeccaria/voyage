@@ -33,7 +33,8 @@
         </div>
 </div>
 @endforeach
-<a href="{{route('create')}}">Ajouter un voyage</a>
+<div class="card center">
+    <a class="btn text-decoration-none" href="{{route('create')}}">Ajouter un voyage</a>
 </div>
 </body>
 </html>

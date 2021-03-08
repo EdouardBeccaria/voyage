@@ -6,7 +6,12 @@ Projet Agence de voyage
 
 * Docker Desktop
 
-Le projet a été developpé sur MacOS
+Le projet a été developpé sur MacOS.
+
+Le stack technique utilisé sur Docker est :
+* PHP 7.4
+* MySQL 8.0
+* Laravel 8
 
 ## Les commandes à lancer
 
@@ -41,6 +46,12 @@ Mettez à jour le style
 Et le tour est joué !
 
 Le projet est accessible via localhost ou http://voyage.test
+
+## Peuplement de la base de données
+
+Un seeder a été créé pour remplir la base de données avec les informations fournies dans l'énoncé.  
+Pour remplir la base de donnée avec ces données :
+> ./vendor/bin/sail artisan db:seed  
 
 ## Tests unitaires
 

@@ -75,7 +75,7 @@ class HomeController extends Controller
         /** @var Voyage $voyage */
         $voyage = Voyage::query()->create();
 
-        /** On créé toutes les étpaes */
+        /** On créé toutes les étapes */
         for ($i = 0; $i < $size; $i++) {
             Etape::query()->create([
                 'type' => $validator->get('type')[$i],

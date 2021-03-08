@@ -1772,6 +1772,7 @@
 .btn {
   font-size: 16px;
   font-weight: 600;
+  padding: 5px;
   border-radius: 10px;
   border: 1px black solid;
   cursor: pointer;
@@ -1780,6 +1781,11 @@
 }
 .btn:hover {
   background-color: white;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+  color: black;
 }
 
 .card {
@@ -1794,6 +1800,6 @@
   font-weight: 700;
   padding: 10px;
   margin: 10px;
-  background-color: lightskyblue;
+  background-color: lightyellow;
   border-radius: 10px;
 }
